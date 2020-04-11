@@ -12,19 +12,21 @@ The following logger types can be composed with this package:
 Example configurations:
 
 ```toml
-[loggers.file]
-type = "Logging.SimpleLogger"
-# min_level = "Debug"           # Debug, Info (default) or Error
-stream = "testapp.log"          # stdout (default), stderr or a filepath
+[loggers.file1]
+type = "LoggingExtras.FileLogger"
+filename = "testapp1.log"
+append = true                   # file open mode (default: false)
+flush = true                    # flush after logging (default: true)
+    
+[loggers.file2]
+type = "LoggingExtras.FileLogger"
+filename = "testapp2.log"
+append = true
+flush = true
 
-[loggers.debugfile]
-type = "Logging.SimpleLogger"
-min_level = "Debug"
-stream = "debug.log"
-
-[loggers.testapp]
+[loggers.tee]
 type = "LoggingExtras.TeeLogger"
-destinations = ["file", "debugfile"]
+destinations = ["file1", "file2"]
 ```
 
 Check documentation of [LoggingExtras](https://github.com/oxinabox/LoggingExtras.jl) for more details about parameter values.
