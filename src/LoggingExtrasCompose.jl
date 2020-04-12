@@ -1,7 +1,7 @@
 module LoggingExtrasCompose
 
 using LoggingExtras, LogCompose
-import LogCompose: logcompose, log_min_level, log_assumed_level
+import LogCompose: logcompose, log_min_level
 
 function logcompose(::Type{LoggingExtras.TeeLogger}, config::Dict{String,Any}, logger_config::Dict{String,Any})
     destinations = [LogCompose.logger(config, dest) for dest in logger_config["destinations"]]

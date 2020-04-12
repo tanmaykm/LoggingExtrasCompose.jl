@@ -1,6 +1,7 @@
 # LoggingExtrasCompose
 
 [![Build Status](https://travis-ci.org/tanmaykm/LoggingExtrasCompose.jl.png)](https://travis-ci.org/tanmaykm/LoggingExtrasCompose.jl) 
+[![Build Status](https://ci.appveyor.com/api/projects/status/github/tanmaykm/LoggingExtrasCompose.jl?branch=master&svg=true)](https://ci.appveyor.com/project/tanmaykm/loggingextrascompose-jl/branch/master) 
 [![Coverage Status](https://coveralls.io/repos/github/tanmaykm/LoggingExtrasCompose.jl/badge.svg?branch=master)](https://coveralls.io/github/tanmaykm/LoggingExtrasCompose.jl?branch=master)
 
 Provides plugins to allow logger provided by [LoggingExtras](https://github.com/oxinabox/LoggingExtras.jl) to be used with [LogCompose](https://github.com/tanmaykm/LogCompose.jl).
