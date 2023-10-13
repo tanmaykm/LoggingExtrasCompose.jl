@@ -3,7 +3,7 @@ uuid = "d5cfad3a-df3b-4959-ad72-66746aa58a7d"
 authors = ["Tanmay Mohapatra <tanmaykm@gmail.com>"]
 license = "MIT"
 desc = "Enable LoggingExtras for LogCompose"
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 LogCompose = "8416b438-731e-11ea-2421-05f642269042"
